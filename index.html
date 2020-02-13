@@ -7,16 +7,27 @@
 
 
         <style>
+
         body{
-            background-color: rgb(0, 20, 80);
+            background-image: url(Images/folha.gif);
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+
+        h1{
+            color: white;
+            background-color: rgba(0,0,0,.75);
+            text-align: center;
         }
 
         h2{
             color: white;
-            background-color: black;
+            background-color: rgba(0,0,0,.75);
         }
 
         p{
+            
             color: white;
         }
         li{
@@ -26,17 +37,56 @@
             color: white;
             text-decoration: none;
         }
+        
 
-        h1{
-            color: white;
-            background-color: black;
-            text-align: center;
-        }
-
-        #links{
+        .links{
             text-decoration: underline;
         }
+        #texto{
+            background-color:rgba(1, 1, 77,0.75);
+            border: 5px ridge black;
+            width: 50%;
+            margin: auto;
+            
+        }
+        #minhafoto{
+            border: 6px ridge brown;
+            float: left;
+        }
         
+        #skills {
+            position: absolute;
+            margin-left: 24.4%;
+            width: 24.5%;
+            height: 224px;
+            background-color:rgba(1, 1, 77,0.75);
+            border: 5px ridge black;
+            
+            
+        }
+
+        #sobreatrybe{
+            position: absolute;
+            margin-left: 49.3%;        
+            width: 24.5%;
+            border: 5px ridge black;  
+            background-image: url("Images/trybeo.png");
+            background-size: cover;
+            background-position: 0%;
+            
+        }
+
+        #redes{
+
+            color: white;
+            background-color: rgba(0,0,0,.75);
+            text-align: center;
+            transform: translateY(260px);
+            
+        }
+
+
+
         </style>
 
 
@@ -44,41 +94,72 @@
 
     </head>
     <body>
-       
-
-
-
-        <h1>Mateus Moreira Sarmento</h1>
-        <img src="Images\pp.jpg" alt="minha imagem" width = "200">
-        <h2>Estudante da <a target="_blank" href="https://www.betrybe.com/">Trybe</a> e Programador</h2>
-        
+            <h1>Mateus Moreira Sarmento</h1>
+     <div id="texto">
+         <p>
+            <img src="Images/pp.jpg" alt="minha imagem" width = "230" id="minhafoto">
+         </p>
+        <h2>Estudante da <a target="_blank" href="https://www.betrybe.com/" class="links">Trybe</a> e Programador</h2>
         <ul>
-         <li> 
+         <li class="links"> 
              <a href="#web-sobremim">
             Sobre mim
             </a>
-         </li>
-         <li> 
+         </li class="links">
+         <li class="links"> 
              <a href="#web-trybe">
             Sobre a Trybe
             </a>
          </li>
         </ul>
         
-
+    
         <h2 id="web-sobremim">Sobre mim:</h2>
-        <p> Nascido dia 20/09/1999 em Belém do Pará.<br>
+        <p> 
+            Nascido dia 20/09/1999 em Belém do Pará.<br>
             Sou programador, <strong>e amante de jogos e tecnologias</strong>, <br>
             atualmente estudando programação na Trybe, <br>
-            e futuro programador profissional.  </p>
+            e futuro programador profissional.  
+        </p>
+        
+     </div>
+     <div id="skills">
+        <h2>Skills:</h2>
+        <p>
+            HTML<br>
+            CSS<br>
+            Java Script<br>
+            C#<br>
+            Edição de Foto & Video<br>
+            <br>
+            <br>
+            <br>
+        </p>
+    </div>
+    
+     <div id="sobreatrybe">
+        
         <h2 id="web-trybe">Sobre a Trybe:</h2>
-        <p>A trybe é uma escola do futuro a para o futuro, <br>
+        <p>
+            A trybe é uma escola do futuro a para o futuro, <br>
            especializada em formar os melhores profissionais na área de programação <br> 
            e com o sistema de <strong>sucesso compartilhado</strong>, suas chances de se formar e se tornar <br>
-           um programador de sucesso são ainda maiores.  </p>
+           um programador de sucesso são ainda maiores.  
+        </p>
            <p>
-            Interessado também?<a target="_blank" href="https://www.betrybe.com/" id="links">clique aqui</a> e saiba mais!
+            Interessado também?<a target="_blank" href="https://www.betrybe.com/" class="links">clique aqui</a> e saiba mais!
            </p>
+     </div>
+     <div id="redes"> 
+        <p>
             
+            <a target="_blank" href="https://www.facebook.com/mateus.sarmento.902">
+            <img src="Images/facebook.png" alt="minha imagem" width = "20"> Facebook</a> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="https://www.instagram.com/ashuraw_matetsu/?hl=pt-br">
+            <img src="Images/instagram.png" alt="minha imagem" width = "20"> Instagram
+            </a>
+        </p>
+     </div>
     </body>
 </html>
